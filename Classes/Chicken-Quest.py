@@ -67,6 +67,8 @@ def createChar():
     print ("                                              > Welcome to the Kingdom of Dileran, Adventurer " + pname)
     print ("\n")
 
+
+
 #Game Loop
 def gameLoop(alive):
     while (alive == True):
@@ -81,11 +83,22 @@ def playerInput():
         quitGame();
     elif (pinput == "Help" or pinput == "help"):
         readMe();
+    elif (pinput == "go to" or pinput == "goto" or pinput == "Go to"):
+        goto();
+
+#Function that moves player from one place to another
+def goto():
+    pinput = input("                                                                                 Where would you like to go?\n> ")
+    pPosition = pinput;
+    print ("                                              > You have gone to: " + pPosition)
+    print ("\n")
 
 #Values
 alive = True;
 pname = "";
 pgender = "";
+pPosition = "Wilderness";
+Places = ["Shanty Town","Tallgrass Town","Wilderness"]
 import random;
 rnd = random;
 
