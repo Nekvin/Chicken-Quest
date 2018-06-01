@@ -32,18 +32,6 @@ def readMe():
     print("                                                     |                                                                                      |")
     print("                                                     | + The Game understands only simple Commands such as: |help|start game|quit|go to|    |")
     print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
-    print("                                                     | +                                                                                    |")
-    print("                                                     |                                                                                      |")
     print("                                                     +--------------------------------------------------------------------------------------+\n")
 
 
