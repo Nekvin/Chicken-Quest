@@ -40,33 +40,57 @@ def quitGame(alive):
     alive = false;
     return alive;
 
-#Starts the game
-def startGame():
-    readMe();
+#Creates Character
+def createChar():
+    #Player chooses Name
+    pinput = input("                                              > Name Your Character: ")
+    pname = pinput;
+    print ("\n")
+    while (len(pinput) > 10):
+        if (len(pinput) <= 10):
+            break;
+        pinput = input("                                              > Name Your Character: ")
+        pname = pinput;
+        print ("\n")
+
+    #Player chooses Gender
+    pinput = input("                                              > Choose your Gender: ")
+    print ("\n")
+    while (pinput != "Male" or pinput != "male" or pinput != "Female" or pinput != "female"):
+        if (pinput == "Male" or pinput == "male" or pinput == "Female" or pinput == "female"):
+            break;
+        pinput = input("                                              > Choose your Gender: ")
+        print ("\n")
+    pgender = pinput;
+
+    print ("\n")
+    print ("                                              > Welcome to the Kingdom of Dileran, Adventurer " + pname)
+    print ("\n")
+
+#Game Loop
+def gameLoop(alive):
+    while (alive == True):
+        playerInput();
 
 #Function that asks player for input as long as he is alive
 def playerInput():
     pinput = "";
-    pinput = input("                                                                                 What would you like to do?\nInput: ")
+    pinput = input("                                                                                 What would you like to do?\n> ")
 
-    if (pinput == "Start" or pinput == "Start Game" or pinput == "start" or pinput == "start game" or pinput == "play" or pinput == "play game" or pinput == "Play" or pinput == "Play Game"):
-        startGame();
+    if (pinput == "Quit" or pinput == "quit"):
+        quitGame();
     elif (pinput == "Help" or pinput == "help"):
         readMe();
-    elif (pinput == "Quit" or pinput == "quit"):
-        quitGame();
-
-#Game Loop
-def loop(alive):
-    while (alive == True):
-        playerInput();
 
 #Values
 alive = True;
+pname = "";
+pgender = "";
 import random;
 rnd = random;
 
 #Execute Code
 titlescreen();
-mainmenu();
-loop(alive);
+readMe();
+createChar();
+gameLoop(alive);

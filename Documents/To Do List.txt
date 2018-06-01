@@ -3,8 +3,7 @@
 |-----------------------------------------------------------------------------------------------------------------------------|
 |[X] - Game Ending													      |
 |[X] - QUIT OPTION 													      |
-|[] - Character Creation(Basic)												      |
-|[] - Character Customization(Extension)										      |
+|[X] - Character Creation(Basic)										              |
 |[] - Exploring Towns													      |
 |[] - NPC interaction 													      |
 |[] - Kingdoms														      |
