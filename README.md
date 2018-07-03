@@ -1,6 +1,6 @@
 # Chicken-Quest
 
-Chicken Quest is a Python-Text-Adventure game. It was made so that i could learn how to Program Python. 
+Chicken Quest is a Python-Text-Adventure game. It was made so that i could practice how to Program Python. 
 
 ## The Goal
 
